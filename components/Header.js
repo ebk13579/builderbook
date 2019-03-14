@@ -56,8 +56,8 @@ function Header({ user, hideHeader, next }) {
             {!user ? (
               <Link prefetch href="/">
                 <Avatar
-                  src="https://storage.googleapis.com/builderbook/logo.svg"
-                  alt="Builder Book logo"
+                  src="https://www.w3.org/Icons/SVG/svg-logo-v.svg"
+                  alt="SVG logo"
                   style={{ margin: '0px auto 0px 10px', cursor: 'pointer' }}
                 />
               </Link>

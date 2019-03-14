@@ -49,11 +49,11 @@ function Header({ user, hideHeader, redirectUrl }) {
           <Grid item sm={8} xs={7} style={{ textAlign: 'left' }}>
             {!user ? (
               <Link prefetch href="/">
-                <Avatar
-                  src="https://storage.googleapis.com/builderbook/logo.svg"
-                  alt="Builder Book logo"
-                  style={{ margin: '0px auto 0px 20px', cursor: 'pointer' }}
-                />
+              <Avatar
+                    src="https://www.w3.org/Icons/SVG/svg-logo-v.svg"
+                    alt="SVG logo"
+                    style={{ margin: '0px auto 0px 20px' }}
+                  />
               </Link>
             ) : null}
           </Grid>
