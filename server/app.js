@@ -8,6 +8,7 @@ const helmet = require('helmet');
 const routesWithSlug = require('./routesWithSlug');
 const routesWithCache = require('./routesWithCache');
 const sitemapAndRobots = require('./sitemapAndRobots');
+const User = require('./models/User');
 
 const auth = require('./google');
 const { setupGithub } = require('./github');
@@ -54,7 +55,10 @@ app.prepare().then(async () => {
 
   // potential fix for Error: Can't set headers
   // try reproducing with Chrome Dev Tools open
-
+  server.get('/', async (req, res) => {
+    const user = await User.findOne({ slug: 'team-builder-book' });
+    app.render(req, res, '/', { user });
+  });
   // if (!dev) {
   //   server.use(compression());
   // };

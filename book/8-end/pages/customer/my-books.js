@@ -63,7 +63,7 @@ class MyBooks extends React.Component {
           ) : (
             <div>
               <h3>Your books</h3>
-              <p>You have not purchased any book.</p>
+              <p>You need to read more, bro.</p>
             </div>
           )}
         </div>

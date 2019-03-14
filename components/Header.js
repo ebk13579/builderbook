@@ -17,6 +17,10 @@ const optionsMenuCustomer = [
     as: '/my-books',
   },
   {
+    text: 'Got question?',
+    href: 'https://github.com/ebk13579/my-ncbi/issues',
+  },
+  {
     text: 'Log out',
     href: '/logout',
     noPrefetch: true,
